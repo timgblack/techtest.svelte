@@ -45,7 +45,7 @@ export function findAllSubstrings(text, subtext, caseSensitive) {
     subtext = subtext.toLowerCase();
   }
   
-  const upperBoundary = text.length - subtext.length;
+  const upperBoundary = text.length - subtext.length + 1;
   const subtextLength = subtext.length;
 
   let result = [];
